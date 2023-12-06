@@ -2,15 +2,27 @@ manifest:
   remotes:
     - name: zephyrproject
       url-base: https://github.com/zephyrproject-rtos
+
+    - name: app
+      url-base: https://github.com/vpovse
+
   projects:
+
+    - name: test-manifest
+      remote: app
+      path: application/test
+      revision: main
+
     - name: hal_nxp
       remote: zephyrproject
       clone-depth: 1
       path: extras/hal_nxp
+
     - name: zephyr
       remote: zephyrproject
       clone-depth: 1
       path: extras/zephyr
       revision: main
+  
   self:
     path: test-zephyr
