@@ -9,8 +9,10 @@ manifest:
   projects:
     - name: app
       remote: vpovse-src
+      import: true
     - name: zephyr
       remote: zephyrproject
+      import: true 
   self:
     path: test-zephyr
  
