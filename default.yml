@@ -1,0 +1,16 @@
+manifest:
+  remotes:
+    - name: vpovse-src
+      url: https://github.com/vpovse/test-zephyr.git
+    - name: zephyrproject
+      url: https://github.com/zephyrproject-rtos
+  defaults:
+    remote: vpovse-src
+  projects:
+    - name: app
+      remote: vpovse-src
+    - name: zephyr
+      remote: zephyrproject
+  self:
+    path: test-zephyr
+ 
