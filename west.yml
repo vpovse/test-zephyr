@@ -3,7 +3,7 @@ manifest:
     revision: main
     remote: app
   
-  group-filter: [-group_zephyr, +group_forvia]
+  group-filter: [+group_zephyr, +group_forvia]
 
   remotes:
     - name: zephyrproject
@@ -16,8 +16,6 @@ manifest:
     - name: test-manifest
       remote: app
       path: application/test
-      description: |
-        "New project"
       groups: 
         - group_forvia
 
@@ -39,4 +37,3 @@ manifest:
       
   self:
     path: test-zephyr
-
