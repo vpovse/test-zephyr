@@ -3,7 +3,7 @@ manifest:
     revision: main
     remote: app
   
-  group-filter: [+group_zephyr, +group_forvia]
+  group-filter: [+group_zephyr, -group_forvia]
 
   remotes:
     - name: zephyrproject
@@ -31,9 +31,10 @@ manifest:
       remote: zephyrproject
       clone-depth: 1
       path: extras/zephyr
-      #import: true
+      #repo-path: zephyr/kernel
       groups: 
         - group_zephyr
       
   self:
     path: test-zephyr
+
