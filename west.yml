@@ -3,7 +3,7 @@ manifest:
     revision: main
     remote: gerrit_zephyr
   
-  group filter: [+group_zephyr, +group_app]
+  group-filter: [+group_zephyr, +group_app]
 
   remotes: 
     - name: gerrit_zephyr
