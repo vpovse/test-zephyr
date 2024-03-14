@@ -1,4 +1,4 @@
-manisfest: 
+manifest: 
   defaults:
     revision: main
     remote: gerrit_zephyr
