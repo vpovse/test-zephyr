@@ -1,40 +1,29 @@
-manifest:
+manisfest: 
   defaults:
     revision: main
-    remote: app
+    remote: gerrit_zephyr
   
-  group-filter: [+group_zephyr, -group_forvia]
+  group filter: [+group_zephyr, +group_app]
 
-  remotes:
-    - name: zephyrproject
-      url-base: https://github.com/zephyrproject-rtos
-
-    - name: app
-      url-base: https://github.com/vpovse
-
-  projects:
-    - name: test-manifest
-      remote: app
-      path: application/test
+  remotes: 
+    - name: gerrit_zephyr
+      url-base: https://povseval@gerrit.pfa.fr.corp/a/os/zephyr
+  
+  projects: 
+    - name: lips
+      path: app
       groups: 
-        - group_forvia
-
-    - name: hal_nxp
-      remote: zephyrproject
-      clone-depth: 1
-      path: extras/hal_nxp
-      revision: master
-      groups: 
-        - group_zephyr
+        - group_app
 
     - name: zephyr
-      remote: zephyrproject
-      clone-depth: 1
-      path: extras/zephyr
-      #repo-path: zephyr/kernel
-      groups: 
+      path: zephyrproject
+      groups:
         - group_zephyr
-      
-  self:
-    path: test-zephyr
 
+    - name: sdk
+      path: sdk
+      groups:
+        - group_zephyr
+    
+  self:
+    path: test-zephyr 
