@@ -17,11 +17,13 @@ manifest:
 
     - name: zephyr
       path: zephyrproject
+      revision: zephyr_3.05.99
       groups:
         - group_zephyr
 
     - name: sdk
-      path: sdk
+      path: /sdk_zephyr
+      revision: zephyr-sdk-0.16.3
       groups:
         - group_zephyr
     
