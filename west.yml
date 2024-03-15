@@ -12,6 +12,7 @@ manifest:
   projects: 
     - name: lips
       path: app
+      revision: master
       groups: 
         - group_app
 
