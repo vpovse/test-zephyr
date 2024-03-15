@@ -17,7 +17,7 @@ manifest:
         - group_app
 
     - name: zephyr
-      revision: zephyr_3.05.99
+      revision: zephyr_3.5.0
       groups:
         - group_zephyr
 
