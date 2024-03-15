@@ -7,7 +7,7 @@ manifest:
 
   remotes: 
     - name: gerrit_zephyr
-      url-base: https://povseval@gerrit.pfa.fr.corp/a/os/zephyr
+      url-base: ssh://gerrit.pfa.fr.corp:29418/os/zephyr/
   
   projects: 
     - name: lips
