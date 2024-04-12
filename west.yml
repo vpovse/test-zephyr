@@ -22,9 +22,9 @@ manifest:
       revision: master
       groups: 
         - group_app
-    - name: blob/main/west.yml
+    - name: tree/main/misc
       remote: git_zephyr
-      path: zephyr/zephyrproject/zephyr/
+      path: zephyr/zephyrproject/zephyr/misc
       groups:
         - group_zephyr
     
