@@ -16,7 +16,7 @@ manifest:
         - group_zephyr
     
     - name: lips
-      path: zephyr/app
+      path: zephyr/zephyrproject/zephyr/app
       revision: master
       groups: 
         - group_app
