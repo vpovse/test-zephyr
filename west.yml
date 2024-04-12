@@ -27,7 +27,7 @@ manifest:
       path: zephyr/zephyrproject/zephyr/misc
       revision: zephyr_3.5.0
       groups:
-        - group_zephy
+        - group_zephyr
     
   self:
     path: manifest
