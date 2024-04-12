@@ -10,16 +10,16 @@ manifest:
       url-base: ssh://gerrit.pfa.fr.corp:29418/os/zephyr
   
   projects: 
-    - name: lips
-      path: app
-      revision: master
-      groups: 
-        - group_app
-
     - name: zephyr
       revision: zephyr_3.5.0
       groups:
         - group_zephyr
     
+    - name: lips
+      path: zephyr/app
+      revision: master
+      groups: 
+        - group_app
+    
   self:
-    path: test-zephyr 
+    path: manifest
