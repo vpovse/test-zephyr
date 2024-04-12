@@ -38,10 +38,22 @@ manifest:
     - name: nrf_hw_models
       remote: git_zephyr
       path: zephyr/zephyrproject/modules/bsim_hw_models/nrf_hw_models
-      revision: master
       groups:
         - group_zephyr
     
-    
+    - name: mbedtls
+      remote: git_zephyr
+      path: zephyr/zephyrproject/modules/crypto/mbedtls
+      revision: zephyr
+      groups:
+        - group_zephyr
+
+    - name: tinycrypt
+      remote: git_zephyr
+      path: zephyr/zephyrproject/modules/crypto/tinycrypt
+      revision: master
+      groups:
+        - group_zephyr
+  
   self:
     path: manifest
