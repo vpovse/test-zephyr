@@ -9,7 +9,7 @@ manifest:
     - name: gerrit_zephyr
       url-base: ssh://gerrit.pfa.fr.corp:29418/os/zephyr
     - name: git_zephyr
-      url-base: https://github.com/zephyrproject-rtos/zephyr/tree/v3.5.0
+      url-base: https://github.com/zephyrproject-rtos/
   
   projects: 
     - name: zephyr
@@ -22,12 +22,18 @@ manifest:
       revision: master
       groups: 
         - group_app
-    - name: misc
+    - name: edtt
       remote: git_zephyr
-      revision: zephyr_3.5.0
-      path: zephyr/zephyrproject/zephyr/misc
+      path: zephyr/zephyrproject/tools
       groups:
         - group_zephyr
+        
+    - name: net-tools
+      remote: git_zephyr
+      path: zephyr/zephyrproject/tools
+      groups:
+        - group_zephyr
+    
     
   self:
     path: manifest
