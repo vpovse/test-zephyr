@@ -25,7 +25,6 @@ manifest:
     - name: misc
       remote: git_zephyr
       path: zephyr/zephyrproject/zephyr/misc
-      revision: zephyr_3.5.0
       groups:
         - group_zephyr
     
