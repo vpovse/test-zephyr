@@ -9,7 +9,7 @@ manifest:
     - name: gerrit_zephyr
       url-base: ssh://gerrit.pfa.fr.corp:29418/os/zephyr
     - name: git_zephyr
-      url-base: https://github.com/zephyrproject-rtos/zephyr
+      url-base: https://github.com/zephyrproject-rtos/zephyr/tree/v3.5.0/
   
   projects: 
     - name: zephyr
