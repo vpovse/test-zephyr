@@ -34,6 +34,13 @@ manifest:
       revision: master
       groups:
         - group_zephyr
+
+    - name: nrf_hw_models
+      remote: git_zephyr
+      path: zephyr/zephyrproject/modules/bsim_hw_models
+      revision: master
+      groups:
+        - group_zephyr
     
     
   self:
