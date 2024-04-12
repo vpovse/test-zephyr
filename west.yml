@@ -24,13 +24,13 @@ manifest:
         - group_app
     - name: edtt
       remote: git_zephyr
-      path: zephyr/zephyrproject/tools
+      path: zephyr/zephyrproject/tools/edtt
       groups:
         - group_zephyr
         
     - name: net-tools
       remote: git_zephyr
-      path: zephyr/zephyrproject/tools
+      path: zephyr/zephyrproject/tools/net-tools
       groups:
         - group_zephyr
     
