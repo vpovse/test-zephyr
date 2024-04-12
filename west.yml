@@ -22,7 +22,7 @@ manifest:
       revision: master
       groups: 
         - group_app
-    - name: tree/main/misc
+    - name: misc
       remote: git_zephyr
       path: zephyr/zephyrproject/zephyr/misc
       groups:
