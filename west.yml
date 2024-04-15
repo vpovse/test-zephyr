@@ -16,6 +16,7 @@ manifest:
       revision: v3.5.0
       remote: git_zephyr
       submodules: true
+      path: zephyrproject/zephyr
       groups:
         - zephyr
     
