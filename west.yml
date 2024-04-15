@@ -3,7 +3,7 @@ manifest:
     revision: main
     remote: git_zephyr
   
-  group-filter: [zephyr, +app, +hal, +tools, +fs, +crypto, +debug]
+  group-filter: [+zephyr, +app, +hal, +tools, +fs, +crypto, +debug]
 
   remotes: 
     - name: gerrit_zephyr
