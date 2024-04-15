@@ -13,10 +13,10 @@ manifest:
   
   projects: 
     - name: zephyr
-      revision: v3.5.0
-      remote: git_zephyr
+      revision: zephyr_3.5.0
+      remote: gerrit_zephyr
       submodules: true
-      path: zephyrproject/zephyr
+      path: zephyr/zephyrproject/zephyr
       groups:
         - zephyr
     
