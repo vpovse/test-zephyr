@@ -15,7 +15,6 @@ manifest:
     - name: zephyr
       revision: zephyr_3.5.0
       remote: gerrit_zephyr
-      import: true 
       submodules: true
       groups:
         - zephyr
