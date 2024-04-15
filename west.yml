@@ -13,15 +13,13 @@ manifest:
   
   projects: 
     - name: zephyr
-      revision: zephyr_3.5.0
       remote: gerrit_zephyr
-      submodules: true
-      path: zephyr/zephyrproject/zephyr
+      revision: v3.5.0
       groups:
         - zephyr
     
     - name: lips
-      path: zephyr/zephyrproject/app
+      path: app
       remote: gerrit_zephyr
       revision: master
       groups: 
@@ -29,25 +27,25 @@ manifest:
         
     - name: acpica
       revision: 0333c2af13179f9b33d495cf7cb9a509f751cbb1
-      path: zephyr/zephyrproject/modules/lib/acpica
+      path: modules/lib/acpica
 
     - name: canopennode
       revision: dec12fa3f0d790cafa8414a4c2930ea71ab72ffd
-      path: zephyr/zephyrproject/modules/lib/canopennode
+      path: modules/lib/canopennode
       
     - name: cmsis
       revision: 5a00331455dd74e31e80efa383a489faea0590e3
-      path: zephyr/zephyrproject/modules/hal/cmsis
+      path: modules/hal/cmsis
       groups:
         - hal
         
     - name: cmsis-dsp
       revision: ff7b5fd1ea5f094665c090c343ec44e74dc0b193
-      path: zephyr/zephyrproject/modules/lib/cmsis-dsp
+      path: modules/lib/cmsis-dsp
       
     - name: cmsis-nn
       revision: 0c8669d81381ccf3b1a01d699f3b68b50134a99f
-      path: zephyr/zephyrproject/modules/lib/cmsis-nn
+      path: modules/lib/cmsis-nn
       
     - name: edtt
       revision: 64e5105ad82390164fb73fc654be3f73a608209a
@@ -269,8 +267,6 @@ manifest:
     - name: zcbor
       revision: 67fd8bb88d3136738661fa8bb5f9989103f4599e
       path: zephyr/zephyrproject/modules/lib/zcbor
-        
-
-  
+    
   self:
     path: manifest
