@@ -19,7 +19,7 @@ manifest:
         - zephyr
     
     - name: lips
-      path: zephyr/zephyrproject/zephyr/app
+      path: zephyr/zephyrproject/app
       remote: gerrit_zephyr
       revision: master
       groups: 
